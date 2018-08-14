@@ -104,9 +104,6 @@ def createMessage(ID):
 	return(body)
 
 @app.route("/sms", methods=['GET', 'POST'])
-"""
-Retrieves message and sends appropriate response
-"""
 def sms_reply():
 	# Create and send text
 	message_body = request.form['Body']
